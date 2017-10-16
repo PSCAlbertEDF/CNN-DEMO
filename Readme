@@ -1,0 +1,13 @@
+I am using two convolutional layer with each associated to a pooling layer and relu layer, and finally plus a fully-connected layer.
+The input is 28*28*1.
+the cnn1:kernel c1*c1*1*d1 stride=1
+28*28*d1
+the pooling1: 2*2 stride 2:
+14*14*d1
+the cnn2:kernel c2*c2*d1*d2
+14*14*d2
+pooling2:2,2 stride:2
+7*7*d2
+fully-connected:
+wf(7*7*d2,f)
+softmax: w(f,10)
